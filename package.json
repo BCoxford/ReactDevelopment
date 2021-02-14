@@ -11,10 +11,13 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
-    "web-vitals": "^1.1.0"
+    "web-vitals": "^1.1.0",
+    "babel-core": "6.13.*",
+    "babel-loader": "6.2.*",
+    "webpack": "1.13.*"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack --progress -p --config webpack.config.js --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

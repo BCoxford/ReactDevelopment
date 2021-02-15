@@ -330,7 +330,10 @@ class App extends React.Component {
     let screen = this.state.screen;
     if(screen == 4) {
       return (
-        <h1 className="headingCompletion">Thank you for signing up {this.state.firstName}!</h1>
+        <React.Fragment>
+          <h1 className="headingCompletion">Thank you for signing up {this.state.firstName}!</h1>
+          <Button className="next first rounded-0 mt-3">Continue to website</Button>
+        </React.Fragment>
       )
     }
   }
